@@ -6,6 +6,5 @@ module.exports = (app) => {
   app.use('/comment', require('./comments'))
   app.use('/like', require('./likes'))
   app.use('/follow', require('./follows'))
-  app.use('/game', require('./games'))
   app.use('/fav', require('./favs'))
 }

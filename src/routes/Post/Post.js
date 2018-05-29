@@ -97,6 +97,7 @@ class Post extends React.PureComponent<Props, State> {
         if (res.success) {
           message.destroy()
           message.success(res.message)
+          location.reload()
         } else {
           message.destroy()
           message.info(res.message)

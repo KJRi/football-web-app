@@ -17,12 +17,12 @@ export const CoreLayout = () => (
     <div className={styles['viewport']}>
       <Switch>
         <Route path='/' component={routes.home} exact />
-        <Route path='/gameDetail' component={routes.gameDetail} exact />
+        <Route path='/matchScore' component={routes.matchScore} exact />
+        <Route path='/footballMatch' component={routes.footballMatch} exact />
         <Route path='/myFav' component={routes.myFav} exact />
         <Route path='/myLike' component={routes.myLike} exact />
         <Route path='/myFollow' component={routes.myFollow} exact />
         <Route path='/id/:id' component={routes.post} exact />
-        <Route path='/game/:id' component={routes.game} exact />
         <Route path='/editUserInfo' component={routes.editUserInfo} exact />
         <Route path='/circle/:username' component={routes.circle} exact />
         <Route path='/tagPost/:tag' component={routes.tagPost} exact />

@@ -10,21 +10,21 @@ import EditPost from './EditPost'
 import EditUserInfo from './EditUserInfo'
 import TagPost from './TagPost'
 import Post from './Post'
-import Game from './Game'
 import MyLike from './MyLike'
 import MyFollow from './MyFollow'
 import MyFav from './MyFav'
-import GameDetail from './GameDetail'
+import Match from './Match'
+import MatchScore from './MatchScore'
 // Force import during development to enable Hot-Module Replacement
 // not need ?
 
 export default {
+  footballMatch: Match,
+  matchScore: MatchScore,
   myLike: MyLike,
-  gameDetail: GameDetail,
   myFav: MyFav,
   myFollow: MyFollow,
   post: Post,
-  game: Game,
   editUserInfo: EditUserInfo,
   tagPost: TagPost,
   register: Register,

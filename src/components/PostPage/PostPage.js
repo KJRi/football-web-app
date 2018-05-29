@@ -26,7 +26,6 @@ class PostPage extends React.PureComponent<Props, State> {
     postlist && postlist.map(item => {
       item.href = `http://localhost:3000/id/${item._id}`
     })
-    console.log(postlist)
     return (
       <List
         itemLayout='vertical'
@@ -39,7 +38,6 @@ class PostPage extends React.PureComponent<Props, State> {
               <IconText type='tag-o' text={item.tag} />]}
       >
             <List.Item.Meta
-              avatar={<Avatar src={item.avatar} />}
               title={<a href={item.href}>{item.title}</a>}
         />
             {item.content}

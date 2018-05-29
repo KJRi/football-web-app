@@ -17,13 +17,14 @@ class TagPost extends React.PureComponent<Props, State> {
       postlist: []
     }
   }
-  componentWillMount () {
+  componentDidMount () {
     const currenttag = this.props.match.params.tag
     fetch(`/post/get?tag=${currenttag}`, {
       method: 'GET'
     })
     .then(res => res.json())
     .then(res => {
+      console.log(res)
       this.setState({
         postlist: res
       })

@@ -8,39 +8,19 @@ const { TextArea } = Input
 const options = [
   {
     value: '0',
-    label: '冒险'
+    label: '赛事分析'
   },
   {
     value: '1',
-    label: '街机'
+    label: '赛事吐槽'
   },
   {
     value: '2',
-    label: '休闲'
+    label: '赛事新闻'
   },
   {
     value: '3',
-    label: '音乐'
-  },
-  {
-    value: '4',
-    label: '益智'
-  },
-  {
-    value: '5',
-    label: '竞速'
-  },
-  {
-    value: '6',
-    label: '策咯'
-  },
-  {
-    value: '7',
-    label: '动作'
-  },
-  {
-    value: '8',
-    label: '模拟'
+    label: '最爱球队'
   }
 ]
 type Props = {}

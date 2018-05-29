@@ -1,7 +1,6 @@
 // @flow
 import React from 'react'
 import './MyFav.css'
-import GamePage from 'components/GamePage'
 import { List, Avatar, Icon } from 'antd'
 
 type Props = {}
@@ -43,7 +42,7 @@ class MyFav extends React.PureComponent<Props, State> {
     const { postlist } = this.state
     return (
       <div>
-        <GamePage {...{ postlist }} />
+        11
       </div>
     )
   }

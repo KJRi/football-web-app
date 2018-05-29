@@ -65,7 +65,7 @@ config.plugins = [
   new HtmlWebpackPlugin({
     template : project.paths.client('index.html'),
     hash     : false,
-    game  : project.paths.public('game.ico'),
+    football  : project.paths.public('football.ico'),
     filename : 'index.html',
     inject   : 'body',
     minify   : {

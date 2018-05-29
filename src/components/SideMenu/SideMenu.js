@@ -33,7 +33,6 @@ class SideMenu extends React.Component {
 
   componentWillMount () {
     const { location } = this.props
-    const { username } = localStorage.getItem('username')
     this.activeMenuItem(location)
   }
 
@@ -53,8 +52,20 @@ class SideMenu extends React.Component {
       case '/':
         key = '-1'
         break
-      case '/github/k2data/repos':
+      case '/matchScore':
         key = '0'
+        break
+      case '/footballMatch':
+        key = '1'
+        break
+      case '/detail':
+        key = '5'
+        break
+      case '/editPost':
+        key = '6'
+        break
+      case '/editUserInfo':
+        key = '8'
         break
       case '/personal':
         key = '9'
@@ -68,13 +79,23 @@ class SideMenu extends React.Component {
       case '/myLike':
         key = '12'
         break
+      case '/tagPost/赛事分析':
+        key = '13'
+        break
+      case '/tagPost/赛事吐槽':
+        key = '14'
+        break
+      case '/tagPost/赛事新闻':
+        key = '15'
+        break
+      case '/tagPost/最爱球队':
+        key = '16'
+        break
     }
     this.setState({ current: key })
   }
 
   render () {
-    const { username } = this.state
-    const circle = `/circle/${username}`
     return (
       <div className={styles['nav']}>
         <Menu onClick={this.handleClick}
@@ -87,10 +108,14 @@ class SideMenu extends React.Component {
             <Icon type='dribbble' />
             <Link to='/'>首页</Link>
           </Menu.Item>
-          <Menu.Item key='0'>
-            <Icon type='calendar' />
-            <Link to='/github/k2data/repos'>赛事频道</Link>
-          </Menu.Item>
+          <SubMenu key='sub1' title={<span><Icon type='calendar' /><span>赛事频道</span></span>}>
+            <Menu.Item key='0'>
+              <Link to='/matchScore'>全部赛事</Link>
+            </Menu.Item>
+            <Menu.Item key='1'>
+              <Link to='/footballMatch'>积分榜</Link>
+            </Menu.Item>
+          </SubMenu>
           <SubMenu key='sub1' title={<span><Icon type='notification' /><span>足球资讯</span></span>}>
             <MenuItemGroup title='Item 1'>
               <Menu.Item key='1'>Option 1</Menu.Item>
@@ -102,14 +127,17 @@ class SideMenu extends React.Component {
             </MenuItemGroup>
           </SubMenu>
           <SubMenu key='sub2' title={<span><Icon type='global' /><span>球吧</span></span>}>
-            <Menu.Item key='5'>Option 5</Menu.Item>
-            <Menu.Item key='6'>Option 6</Menu.Item>
-            <SubMenu key='sub3' title='我的帖子'>
-              <Menu.Item key='7'><Link to={circle}>我的帖子</Link></Menu.Item>
-              <Menu.Item key='8'><Link to='/editPost'><Icon type='edit' />发帖</Link></Menu.Item>
+            <Menu.Item key='5'><Link to='/detail'>全部</Link></Menu.Item>
+            <SubMenu key='sub3' title={<span><Icon type='slack' /><span>Tag</span></span>}>
+              <Menu.Item key='13'><Link to='/tagPost/赛事分析'>赛事分析</Link></Menu.Item>
+              <Menu.Item key='14'><Link to='/tagPost/赛事吐槽'>赛事吐槽</Link></Menu.Item>
+              <Menu.Item key='15'><Link to='/tagPost/赛事新闻'>赛事新闻</Link></Menu.Item>
+              <Menu.Item key='16'><Link to='/tagPost/最爱球队'>最爱球队</Link></Menu.Item>
             </SubMenu>
+            <Menu.Item key='6'><Link to='/editPost'><Icon type='edit' />发帖</Link></Menu.Item>
           </SubMenu>
           <SubMenu key='sub4' title={<span><Icon type='user' /><span>我的</span></span>}>
+            <Menu.Item key='8'><Link to='/editUserInfo'>修改信息</Link></Menu.Item>
             <Menu.Item key='9'><Link to='/personal'>个人中心</Link></Menu.Item>
             <Menu.Item key='10'><Link to='/myFav'>我的收藏</Link></Menu.Item>
             <Menu.Item key='11'><Link to='/myFollow'>我的关注</Link></Menu.Item>

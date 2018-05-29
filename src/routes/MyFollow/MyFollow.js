@@ -32,6 +32,7 @@ class MyFollow extends React.PureComponent<Props, State> {
     const { followList } = this.state
     return (
       <List
+        style={{ background: '#FFF' }}
         header={<div>你的关注:</div>}
         footer={<div>共{followList.length}个关注</div>}
         bordered

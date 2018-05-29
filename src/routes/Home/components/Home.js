@@ -29,69 +29,53 @@ class Home extends React.PureComponent<Props, State> {
   render () {
     return (
       <div>
-        <Link to='/game/5b0b7c76c4fc6b790c21fb0a'>
+        <Link to='/id/5b0d0145d5681e047cad3fe9'>
           <Card
             hoverable
-            cover={<img src='https://img.tapimg.com/market/images/c9a4858f66d1c450f9245e2a70a57d66.jpg?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
+            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-27/DIPO2ME500BV0005NOS.jpg' />}
   >
             <Meta
-              title='疯狂兔子：无敌跑跑'
-              description='和疯兔一起开启冒险跑酷之旅！'
+              title='欧冠决赛：皇马3-1利物浦'
     />
           </Card>
         </Link>
-        <Link to='/game/5b0b801fc4fc6b790c21fb0f'>
+        <Link to='/id/5b0d0173d5681e047cad3fea'>
           <Card
             hoverable
-            cover={<img src='https://img.tapimg.com/market/images/ee907c5487e95b0caf0d5ecd6740c775.jpg?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
+            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-28/DISPVSP000BV0005NOS.png' />}
   >
             <Meta
-              title='碧蓝航线'
-              description='此身为舰，即刻出战！周年庆·第一弹开展中'
+              title='C罗又造霸气一幕!BBC请多合体几次 齐祖搞怪'
     />
           </Card>
         </Link>
-        <Link to='/game/5b0b823dc4fc6b790c21fb13'>
+        <Link to='/id/5b0d01d2d5681e047cad3fed'>
           <Card
             hoverable
-            cover={<img src='https://img.tapimg.com/market/images/cec52069510729184d805c4e31cbda0b.jpg?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
+            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-26/DINROK2900C90005NOS.png' />}
   >
             <Meta
-              title='密室逃脱绝境系列3画仙奇缘'
-              description='体验琴棋书画的魅力，逃脱扑朔迷离的密室。'
+              title='德国"迎新会":穆勒一来就耍宝 特狮小新团聚'
     />
           </Card>
         </Link>
-        <Link to='/game/5b0b87a6c4fc6b790c21fb17'>
+        <Link to='/id/5b0d022ed5681e047cad3fef'>
           <Card
             hoverable
-            cover={<img src='https://img.tapimg.com/market/images/c937ef8159f3bc733eb0af88904a6f02.png?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
+            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-26/DIORT4C70B4C0005NOS.jpg' />}
   >
             <Meta
-              title='同步音律'
-              description='指尖乐曲，解我心意。'
+              title='热身赛-中国1-0缅甸'
     />
           </Card>
         </Link>
-        <Link to='/game/5b0b7732c4fc6b790c21fb02'>
+        <Link to='/id/5b0d0265d5681e047cad3ff0'>
           <Card
             hoverable
-            cover={<img src='https://img.tapimg.com/market/images/131465cab220a1c917f66d6eb02f7abf.jpg?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
+            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-24/DIJT1HTD0B4C0005NOS.jpg' />}
   >
             <Meta
-              title='FIFA足球世界'
-              description='正统FIFA授权手游，近距离感受足球的魅力。'
-    />
-          </Card>
-        </Link>
-        <Link to='/game/5b0b8106c4fc6b790c21fb11'>
-          <Card
-            hoverable
-            cover={<img src='https://img.tapimg.com/market/images/ce195e89e1b1154f08c6ed8760357eff.jpg?imageMogr2/auto-orient/thumbnail/2080x/strip/gravity/Center/crop/2080x828/format/jpg/quality/80/interlace/1' />}
-  >
-            <Meta
-              title='虚荣 (Vainglory)'
-              description='摇杆+点触双模式操作，真竞技MOBA手游。'
+              title='国足拍全家福郑智站C位 训练场里皮亲力亲为'
     />
           </Card>
         </Link>
