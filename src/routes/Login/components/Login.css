@@ -1,0 +1,32 @@
+.formStyle{
+    width: 100%;
+    text-align: center;
+}
+.loginButton{
+    width: 60%;
+    max-width: 300px;
+    height: 40px;
+}
+.containel{
+  width: 100%;
+  height: 100%;
+  background: url(http://res.leisu.com/static/pubilc/img/nrev/resonsports/page/banner/banner-one.png);
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0px auto;
+  :global {
+    .ant-input-affix-wrapper{
+      max-width: 500px;
+    }
+  }
+  p{
+    color: #fff;
+  }
+  a{
+    color: #fff;
+  }
+}
+h2{
+  color: #fff;
+}
