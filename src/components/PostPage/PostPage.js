@@ -40,7 +40,7 @@ class PostPage extends React.PureComponent<Props, State> {
             <List.Item.Meta
               title={<a href={item.href}>{item.title}</a>}
         />
-            {item.content}
+            <p dangerouslySetInnerHTML={{ __html:item.content }} />
           </List.Item>
     )}
   />

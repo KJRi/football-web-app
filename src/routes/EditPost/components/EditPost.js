@@ -2,6 +2,8 @@
 import React, { Component } from 'react'
 import styles from './EditPost.css'
 import { Input, Form, Icon, Button, message, Select } from 'antd'
+import BraftEditor from 'braft-editor'
+import 'braft-editor/dist/braft.css'
 const FormItem = Form.Item
 const { Option } = Select
 const { TextArea } = Input
@@ -63,7 +65,19 @@ class EditPost extends React.PureComponent<Props, State> {
       }
     })
   }
+  handleChange = (content) => {
+    console.log(content)
+  }
+  handleRawChange = (rawContent) => {
+    console.log(rawContent)
+  }
   render () {
+    const editorProps = {
+      height: 500,
+      contentFormat: 'html',
+      onChange: this.handleChange,
+      onRawChange: this.handleRawChange
+    }
     const { getFieldDecorator } = this.props.form
     return (
       <div className={styles['containel']}>
@@ -93,8 +107,7 @@ class EditPost extends React.PureComponent<Props, State> {
             {getFieldDecorator('content', {
               rules: [{ required: true, message: '请输入正文!' }]
             })(
-              <TextArea prefix={<Icon type='edit' style={{ fontSize: 13 }} />}
-                style={{ height: 300 }} placeholder='你的正文' />
+              <BraftEditor {...editorProps} />
                       )}
           </FormItem>
           <FormItem>
