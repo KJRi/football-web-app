@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './PostPage.css'
 import { List, Avatar, Icon } from 'antd'
+import { Link } from 'react-router-dom'
 
 type Props = {
   postlist: Array<Object>,
@@ -24,7 +25,7 @@ class PostPage extends React.PureComponent<Props, State> {
 )
     const postlist = this.props.postlist
     postlist && postlist.map(item => {
-      item.href = `http://localhost:3000/id/${item._id}`
+      item.href = `/id/${item._id}`
     })
     return (
       <List
@@ -38,7 +39,7 @@ class PostPage extends React.PureComponent<Props, State> {
               <IconText type='tag-o' text={item.tag} />]}
       >
             <List.Item.Meta
-              title={<a href={item.href}>{item.title}</a>}
+              title={<Link to={item.href}>{item.title}</Link>}
         />
             <p dangerouslySetInnerHTML={{ __html:item.content }} />
           </List.Item>

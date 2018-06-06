@@ -1,5 +1,15 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.home-contain{
+  :global
+  {
+      .ant-card-body{
+        background:#708090;
+      }
+     .ant-card-cover{
+    background: #e6e6e6;
+    img{
+      width:90%;
+      margin: 0 auto;
+    }
+  }
+}
 }

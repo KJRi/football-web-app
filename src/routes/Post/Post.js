@@ -245,7 +245,7 @@ class Post extends React.PureComponent<Props, State> {
               <Meta
                 avatar={
                   <div style={{ textAlign: 'center' }}>
-                    <h5 style={{ color: '#999' }}>{postlist.author}</h5>
+                    <h5 style={{ color: '#999' }}>{list.author}</h5>
                   </div>
               }
                 title={list.content}

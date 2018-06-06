@@ -32,7 +32,9 @@ class MatchList extends React.PureComponent<Props, State> {
         />
             <div style={{ textAlign: 'center' }}>
               <h1><Icon type='trophy' style={{ color: 'yellow' }} />{item.c4R}</h1>
-              <h1>{item.c4T1}<Icon type='fork' style={{ color: 'red' }} />{item.c4T2}</h1>
+              <h1>{item.c4T1}
+                <Icon type='fork' style={{ color: 'red' }} />
+                {item.c4T2}</h1>
             </div>
           </List.Item>
     )}

@@ -50,31 +50,31 @@ class RegisterFormCom extends Component {
         <Form onSubmit={this.handleRegister} className={styles.formStyle}>
           <FormItem>
             {getFieldDecorator('username', {
-              rules: [{ required: true, message: '请输入用户名!' }]
+              rules: [{ required: true, min: 2, max: 12, message: '用户名长度为2到12位!' }]
             })(
-              <Input prefix={<Icon type='user' style={{ fontSize: 13 }} />} placeholder='Username' />
+              <Input prefix={<Icon type='user' style={{ fontSize: 13 }} />} placeholder='请输入用户名' />
                       )}
           </FormItem>
           <FormItem>
             {getFieldDecorator('password', {
-              rules: [{ required: true, message: '请输入密码!' }]
+              rules: [{ required: true, min: 8, max: 16, message: '密码长度为8到16位!' }]
             })(
               <Input prefix={<Icon type='lock' style={{ fontSize: 13 }} />} type='password'
-                placeholder='Password' />
+                placeholder='请输入密码' />
                       )}
           </FormItem>
           <FormItem>
             {getFieldDecorator('confirmPassword', {
-              rules: [{ required: true, message: '请输入密码!' }]
+              rules: [{ required: true, min: 8, max: 16, message: '确认密码长度为8到16位!' }]
             })(
               <Input prefix={<Icon type='lock' style={{ fontSize: 13 }} />} type='password'
-                placeholder='Repeat password' />
+                placeholder='请输入确认密码' />
                       )}
           </FormItem>
           <FormItem>
             <Button className={styles.loginButton} type='primary' htmlType='submit'>
                           注册
-                      </Button>
+            </Button>
           </FormItem>
         </Form>
         <p>已有帐号？<a href='/login'>登录</a></p>

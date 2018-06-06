@@ -28,54 +28,34 @@ class Home extends React.PureComponent<Props, State> {
 
   render () {
     return (
-      <div>
-        <Link to='/id/5b0d0145d5681e047cad3fe9'>
+      <div className={styles['home-contain']}>
+        <Link to='/id/5b17c579c4635291dc99656b'>
           <Card
             hoverable
-            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-27/DIPO2ME500BV0005NOS.jpg' />}
+            cover={<img src='http://5b0988e595225.cdn.sohucs.com/images/20180606/1dc980cacbec4e77865fb16beb30036f.jpeg' />}
   >
             <Meta
-              title='欧冠决赛：皇马3-1利物浦'
+              title={<h3 style={{ color: '#e8e8e8' }}>皇马官宣齐达内离任 3年9冠打造一代王朝</h3>}
     />
           </Card>
         </Link>
-        <Link to='/id/5b0d0173d5681e047cad3fea'>
+        <Link to='/id/5b17d119c4635291dc996574'>
           <Card
             hoverable
-            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-28/DISPVSP000BV0005NOS.png' />}
+            cover={<img src='http://5b0988e595225.cdn.sohucs.com/images/20180606/94079c37b41744078cebe88f1d8a9685.jpeg' />}
   >
             <Meta
-              title='C罗又造霸气一幕!BBC请多合体几次 齐祖搞怪'
+              title={<h3 style={{ color: '#e8e8e8' }}>英超频繁遭遇意甲球队“敲诈”，利物浦：怪我喽</h3>}
     />
           </Card>
         </Link>
-        <Link to='/id/5b0d01d2d5681e047cad3fed'>
+        <Link to='/id/5b17d329c4635291dc996576'>
           <Card
             hoverable
-            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-26/DINROK2900C90005NOS.png' />}
+            cover={<img src='https://i3.hoopchina.com.cn/blogfile/201806/05/BbsImg152816256339581_142125036472042_620x348.jpg' />}
   >
             <Meta
-              title='德国"迎新会":穆勒一来就耍宝 特狮小新团聚'
-    />
-          </Card>
-        </Link>
-        <Link to='/id/5b0d022ed5681e047cad3fef'>
-          <Card
-            hoverable
-            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-26/DIORT4C70B4C0005NOS.jpg' />}
-  >
-            <Meta
-              title='热身赛-中国1-0缅甸'
-    />
-          </Card>
-        </Link>
-        <Link to='/id/5b0d0265d5681e047cad3ff0'>
-          <Card
-            hoverable
-            cover={<img src='http://pic-bucket.nosdn.127.net/photo/0005/2018-05-24/DIJT1HTD0B4C0005NOS.jpg' />}
-  >
-            <Meta
-              title='国足拍全家福郑智站C位 训练场里皮亲力亲为'
+              title={<h3 style={{ color: '#e8e8e8' }}>曾带四支不同球队杀入十六强，神奇教练米卢的世界杯传奇</h3>}
     />
           </Card>
         </Link>

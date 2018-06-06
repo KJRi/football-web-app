@@ -48,23 +48,23 @@ class LoginFormCom extends Component {
         <Form onSubmit={this.handleLogin} className={styles.formStyle}>
           <FormItem>
             {getFieldDecorator('username', {
-              rules: [{ required: true, message: '请输入用户名!' }]
+              rules: [{ required: true, min: 2, max: 12, message: '用户名长度为2到12位!' }]
             })(
-              <Input prefix={<Icon type='phone' style={{ fontSize: 13 }} />} placeholder='username' />
+              <Input prefix={<Icon type='user' style={{ fontSize: 13 }} />} placeholder='请输入用户名' />
                       )}
           </FormItem>
           <FormItem>
             {getFieldDecorator('password', {
-              rules: [{ required: true, message: '请输入密码!' }]
+              rules: [{ required: true, min: 8, max: 16, message: '密码长度为8到16位!' }]
             })(
               <Input prefix={<Icon type='lock' style={{ fontSize: 13 }} />} type='password'
-                placeholder='Password' />
+                placeholder='请输入密码' />
                       )}
           </FormItem>
           <FormItem>
             <Button className={styles.loginButton} type='primary' htmlType='submit'>
                           登录
-                      </Button>
+            </Button>
           </FormItem>
         </Form>
         <p>没有帐号？<a href='/register'>注册</a></p>
