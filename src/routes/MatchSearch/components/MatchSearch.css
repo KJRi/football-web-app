@@ -1,0 +1,8 @@
+.match-contain{
+  background-color: #FFF;
+  :global {
+    .anticon{
+      margin:0 10px;
+      }
+  }
+}

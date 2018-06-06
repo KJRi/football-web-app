@@ -58,6 +58,12 @@ class SideMenu extends React.Component {
       case '/footballMatch':
         key = '1'
         break
+      case '/teamSearch':
+        key = '2'
+        break
+      case '/matchSearch':
+        key = '3'
+        break
       case '/detail':
         key = '5'
         break
@@ -112,19 +118,15 @@ class SideMenu extends React.Component {
             <Menu.Item key='0'>
               <Link to='/matchScore'>全部赛事</Link>
             </Menu.Item>
+            <Menu.Item key='2'>
+              <Link to='/teamSearch'>球队赛事</Link>
+            </Menu.Item>
+            <Menu.Item key='3'>
+              <Link to='/matchSearch'>联赛赛事</Link>
+            </Menu.Item>
             <Menu.Item key='1'>
               <Link to='/footballMatch'>积分榜</Link>
             </Menu.Item>
-          </SubMenu>
-          <SubMenu key='sub1' title={<span><Icon type='notification' /><span>足球资讯</span></span>}>
-            <MenuItemGroup title='Item 1'>
-              <Menu.Item key='1'>Option 1</Menu.Item>
-              <Menu.Item key='2'>Option 2</Menu.Item>
-            </MenuItemGroup>
-            <MenuItemGroup title='Item 2'>
-              <Menu.Item key='3'>Option 3</Menu.Item>
-              <Menu.Item key='4'>Option 4</Menu.Item>
-            </MenuItemGroup>
           </SubMenu>
           <SubMenu key='sub2' title={<span><Icon type='global' /><span>球吧</span></span>}>
             <Menu.Item key='5'><Link to='/detail'>全部</Link></Menu.Item>

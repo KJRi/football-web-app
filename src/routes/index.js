@@ -13,12 +13,16 @@ import Post from './Post'
 import MyLike from './MyLike'
 import MyFollow from './MyFollow'
 import MyFav from './MyFav'
+import TeamSearch from './TeamSearch'
+import MatchSearch from './MatchSearch'
 import Match from './Match'
 import MatchScore from './MatchScore'
 // Force import during development to enable Hot-Module Replacement
 // not need ?
 
 export default {
+  matchSearch: MatchSearch,
+  teamSearch: TeamSearch,
   footballMatch: Match,
   matchScore: MatchScore,
   myLike: MyLike,

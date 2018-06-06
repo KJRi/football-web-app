@@ -62,7 +62,7 @@ class PersonalList extends React.PureComponent<Props, State> {
         <Link to='/editUserInfo'><div className={styles['list-item']}>
           <Icon type='solution' />修改信息<Icon type='right' /></div></Link>
         <Link to='/myFav'><div className={styles['list-item']}>
-          <Icon type='heart-o' />游戏收藏<Icon type='right' /></div></Link>
+          <Icon type='heart-o' />球队收藏<Icon type='right' /></div></Link>
         <Link to='/myFollow'><div className={styles['list-item']}>
           <Icon type='smile-o' />我的关注<Icon type='right' /></div></Link>
         <Link to='/myLike'><div className={styles['list-item']}>

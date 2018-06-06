@@ -28,6 +28,7 @@ const config = {
   server_port : process.env.PORT || 3000,
   database    : 'mongodb://localhost:27017/football',
   secret      : 'footballwebapp',
+  footmatch   : 'http://op.juhe.cn/onebox/football/',
   // ----------------------------------
   // Compiler Configuration
   // ----------------------------------
@@ -103,7 +104,8 @@ config.globals = {
   '__PROD__'     : config.env === 'production',
   '__TEST__'     : config.env === 'test',
   '__COVERAGE__' : !argv.watch && config.env === 'test',
-  '__BASENAME__' : JSON.stringify(process.env.BASENAME || '')
+  '__BASENAME__' : JSON.stringify(process.env.BASENAME || ''),
+  '__FOOTBALL__'  : JSON.stringify(config.footmatch)
 }
 
 // ------------------------------------
