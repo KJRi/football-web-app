@@ -3,7 +3,7 @@ const express = require('express')
 const Like = require('../models/like')
 const router = express.Router()
 
-// 添加评论
+// 添加点赞
 router.post('/add', (req, res) => {
   if (!req.body.username) {
     res.json({ success: false, message: '未登录' })

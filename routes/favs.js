@@ -3,7 +3,7 @@ const express = require('express')
 const Fav = require('../models/fav')
 const router = express.Router()
 
-// 添加点赞
+// 添加收藏
 router.post('/add', (req, res) => {
   if (!req.body.username) {
     res.json({ success: false, message: '未登录' })
@@ -21,7 +21,7 @@ router.post('/add', (req, res) => {
     })
   }
 })
-// 删除点赞
+// 删除收藏
 router.post('/delete', (req, res) => {
   if (!req.body.username) {
     res.json({ success: false, message: '未登录' })
@@ -39,14 +39,14 @@ router.post('/delete', (req, res) => {
     })
   }
 })
-// 获取用户点赞
+// 获取用户收藏
 router.get('/getByUser', (req, res) => {
   Fav.find({ 'username': req.query.username }).sort({ _id: -1 }).exec().then((like) => {
     return res.json(like)
   })
 })
 
-// 查看是否点赞过
+// 查看是否收藏过
 router.get('/getBy', (req, res) => {
   Fav.find({ 'gameId': req.query.gameId, 'username': req.query.username }).sort({ _id: -1 }).exec().then((like) => {
     return res.json(like)

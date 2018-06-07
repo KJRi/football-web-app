@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './MatchList.css'
 import { List, Avatar, Icon } from 'antd'
+import TeamName from 'components/TeamName'
 
 type Props = {
   matchList: Array<Object>,
@@ -32,9 +33,9 @@ class MatchList extends React.PureComponent<Props, State> {
         />
             <div style={{ textAlign: 'center' }}>
               <h1><Icon type='trophy' style={{ color: 'yellow' }} />{item.c4R}</h1>
-              <h1>{item.c4T1}
+              <h1><TeamName {...{ teamName: item.c4T1 }} />
                 <Icon type='fork' style={{ color: 'red' }} />
-                {item.c4T2}</h1>
+                <TeamName {...{ teamName: item.c4T2 }} /></h1>
             </div>
           </List.Item>
     )}

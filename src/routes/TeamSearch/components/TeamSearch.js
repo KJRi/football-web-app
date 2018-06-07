@@ -25,7 +25,17 @@ class TeamSearch extends React.PureComponent<Props, State> {
     })
     .then(res => res.json())
     .then(res => {
-      console.log(res)
+      this.setState({
+        matchList: res.result.list
+      })
+    })
+  }
+  componentDidMount () {
+    fetchJsonp(`${__FOOTBALL__}team?key=6eedb4ba77e27df74b348f2b249d4be4&team=利物浦`, {
+      method: 'GET'
+    })
+    .then(res => res.json())
+    .then(res => {
       this.setState({
         matchList: res.result.list
       })

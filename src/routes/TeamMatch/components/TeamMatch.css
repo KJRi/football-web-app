@@ -1,0 +1,15 @@
+.match-contain{
+  :global {
+    .anticon{
+      margin:0 10px;
+      }
+    .ant-card-body{
+      text-align: center;
+      height: 400px;
+      background: url(http://pic4.bbzhi.com/tiyubizhi/2008zuqiuouzhoubeizhuomianbizhi/2008zuqiuouzhoubeizhuomianbizhi_374676_9.jpg)
+    }
+    .ant-card-meta-title{
+      padding-top: 100px;
+    }
+  }
+}

@@ -17,10 +17,12 @@ import TeamSearch from './TeamSearch'
 import MatchSearch from './MatchSearch'
 import Match from './Match'
 import MatchScore from './MatchScore'
+import TeamMatch from './TeamMatch'
 // Force import during development to enable Hot-Module Replacement
 // not need ?
 
 export default {
+  teamMatch: TeamMatch,
   matchSearch: MatchSearch,
   teamSearch: TeamSearch,
   footballMatch: Match,

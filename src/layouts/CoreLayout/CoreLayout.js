@@ -25,6 +25,7 @@ export const CoreLayout = () => (
         <Route path='/myLike' component={routes.myLike} exact />
         <Route path='/myFollow' component={routes.myFollow} exact />
         <Route path='/id/:id' component={routes.post} exact />
+        <Route path='/team/:team' component={routes.teamMatch} exact />
         <Route path='/editUserInfo' component={routes.editUserInfo} exact />
         <Route path='/circle/:username' component={routes.circle} exact />
         <Route path='/tagPost/:tag' component={routes.tagPost} exact />

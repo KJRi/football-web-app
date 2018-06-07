@@ -39,7 +39,7 @@ class MyFollow extends React.PureComponent<Props, State> {
         dataSource={followList}
         renderItem={item => (<List.Item
           onClick={() => { window.location.href = `/circle/${item.follow}` }}>
-          {item.follow}
+          <h1>{item.follow}</h1>
         </List.Item>)}
   />
     )
