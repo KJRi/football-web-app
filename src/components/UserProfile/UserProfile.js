@@ -5,6 +5,7 @@ import { Avatar, Icon, Button, message } from 'antd'
 
 type Props = {
   userinfo: Object,
+  name: String
 }
 type State = {
   followState: Boolean,
@@ -20,14 +21,13 @@ class UserProfile extends React.PureComponent<Props, State> {
     }
   }
   componentWillMount () {
-    const { username } = this.props.userinfo
-    const name = localStorage.getItem('username')
-    fetch(`/follow/getBy?follow=${username}&&username=${name}`, {
+    const { name } = this.props
+    const username = localStorage.getItem('username')
+    fetch(`/follow/getBy?follow=${name}&&username=${username}`, {
       method: 'GET'
     })
     .then(res => res.json())
     .then(res => {
-      console.log(res)
       if (res.length === 1) {
         this.setState({
           followState: true
